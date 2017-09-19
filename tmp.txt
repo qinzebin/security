@@ -1,0 +1,46 @@
+[
+[
+  Version: V3
+  Subject: CN=qinzebin, OU=PC, O=alienware, L=空港经济区, ST=天津, C=CN
+  Signature Algorithm: SHA1withDSA, OID = 1.2.840.10040.4.3
+
+  Key:  Sun DSA Public Key
+    Parameters:DSA
+	p:     fd7f5381 1d751229 52df4a9c 2eece4e7 f611b752 3cef4400 c31e3f80 b6512669
+    455d4022 51fb593d 8d58fabf c5f5ba30 f6cb9b55 6cd7813b 801d346f f26660b7
+    6b9950a5 a49f9fe8 047b1022 c24fbba9 d7feb7c6 1bf83b57 e7c6a8a6 150f04fb
+    83f6d3c5 1ec30235 54135a16 9132f675 f3ae2b61 d72aeff2 2203199d d14801c7
+	q:     9760508f 15230bcc b292b982 a2eb840b f0581cf5
+	g:     f7e1a085 d69b3dde cbbcab5c 36b857b9 7994afbb fa3aea82 f9574c0b 3d078267
+    5159578e bad4594f e6710710 8180b449 167123e8 4c281613 b7cf0932 8cc8a6e1
+    3c167a8b 547c8d28 e0a3ae1e 2bb3a675 916ea37f 0bfa2135 62f1fb62 7a01243b
+    cca4f1be a8519089 a883dfe1 5ae59f06 928b665e 807b5525 64014c3b fecf492a
+
+  y:
+    1b7d10c8 4a37f0f7 f52df2b2 260994b9 0046018a 4f3c4695 fb5ff951 e8c92fe3
+    4393d310 ce79851c b7594438 f7247d89 f36fe3fb 5b55ec7c 3f7dc10d 60594667
+    dd65a02e 4ad2fe2b 49b06eb7 3e53a786 4e41ec23 c8b276a6 3e01708e 26424e8d
+    7de24597 ee4ff38c 8052bae8 53c1a97c e4123e9d 3d5c53aa 67b464f9 c836efe3
+
+  Validity: [From: Tue Sep 19 17:43:08 CST 2017,
+               To: Mon Dec 18 17:43:08 CST 2017]
+  Issuer: CN=qinzebin, OU=PC, O=alienware, L=空港经济区, ST=天津, C=CN
+  SerialNumber: [    535c36a4]
+
+Certificate Extensions: 1
+[1]: ObjectId: 2.5.29.14 Criticality=false
+SubjectKeyIdentifier [
+KeyIdentifier [
+0000: 63 FF FE 7F 10 5E FD 14   52 45 F6 6C 1C 4D 48 6A  c....^..RE.l.MHj
+0010: 42 F6 D3 A8                                        B...
+]
+]
+
+]
+  Algorithm: [SHA1withDSA]
+  Signature:
+0000: 30 2C 02 14 64 9E CE 13   5F 17 35 A7 D2 AE F0 AA  0,..d..._.5.....
+0010: 64 B2 61 E6 D8 F4 2B AA   02 14 13 DA C5 18 D9 3F  d.a...+........?
+0020: F8 8A 91 69 BB 04 31 12   A8 47 68 97 C7 FB        ...i..1..Gh...
+
+]
