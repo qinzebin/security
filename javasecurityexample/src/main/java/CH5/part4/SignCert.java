@@ -11,7 +11,7 @@ public class SignCert {
     public static void main(String args[]) throws Exception {
         char[] storepass = "123456".toCharArray();
         char[] cakeypass = "123456".toCharArray();
-        String alias = "qinzebin2";//CA证书
+        String alias = "qinzebin1";//CA证书
         String name = "mykeystore";
         // Cert of CA-----c1
         FileInputStream in = new FileInputStream(name);
@@ -34,7 +34,7 @@ public class SignCert {
         // Cert of lf-----c2
         CertificateFactory cf = CertificateFactory.getInstance("X.509");
         //FileInputStream in2 = new FileInputStream(args[0]);
-        FileInputStream in2 = new FileInputStream("qinzebin3.cer");
+        FileInputStream in2 = new FileInputStream("qinzebin2.cer");
         java.security.cert.Certificate c2 = cf.generateCertificate(in2);
         in2.close();
 
@@ -65,8 +65,9 @@ public class SignCert {
         // 签名
         newcert.sign(caprk, "MD5WithRSA");
         System.out.println(newcert);
+
         // 存入密钥库
-        ks.setCertificateEntry("qinzebin3", newcert);
+        ks.setCertificateEntry("qinzebin3_signed", newcert);//作为一个新证书存在
         /*
             PrivateKey prk=(PrivateKey)ks.getKey("lf",
         "wshr.ut".toCharArray( ));
@@ -75,7 +76,7 @@ public class SignCert {
         "newpass".toCharArray(),cchain);
             */
         FileOutputStream out = new FileOutputStream("newstore");
-        ks.store(out, "newpass".toCharArray());
+        ks.store(out, "123456".toCharArray());
         out.close();
     }
 }
